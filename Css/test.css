@@ -5,6 +5,12 @@ body {
 	font-size: 16px;
 }
 
+/*共通事項*/
+*, ::after, ::before {
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
 //*header部分*//
 
 .header {
@@ -18,15 +24,17 @@ body {
 }
 
 .header-logo {
-  margin: 4px 0 0;
+  width: 40%;
+  max-width: 242px;
 }
 
 .info-tell {
-  padding: 0 0 0 33px;
-  margin: 4px 0 0;
+  display: inline-block;
+  padding: 0 0 0 28px;
+  margin: 0 0 4px;
 	background: url(../img/icon-tel-01.png) left center no-repeat;
 	color: #000;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -34,15 +42,18 @@ body {
   padding: 0;
   margin: 0;
   font-size: 11px;
-  line-height: 1em;
+  line-height: 0.5em;
 }
+
+//*main-up 部分*//
 
 .main-content {
-  background: url(../img/img-str-05.jpg) center top no-repeat;
+  background-image: url(../img/bg-hero.jpg)center top no-repeat;
   background-size: cover;
+  position: relative;
 }
 
-.main-content-上1 {
+.main-content-up1 {
   padding: 16px 0 0;
   margin-bottom: 10px;
   font-size: 26px;
@@ -58,14 +69,14 @@ body {
   color: #f25459;
 }
 
-.main-content-上3 {
+.main-content-up3 {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 44px;
   line-height: 53px;
 }
 
-.main-content-上5 {
+.main-content-up5 {
   top: 32px;
   right: 56px;
   width: 250px;
@@ -75,7 +86,7 @@ body {
   letter-spacing: .15em;
 }
 
-.main-content-上5, .main-content-上6 {
+.main-content-up5, .main-content-up6 {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -86,7 +97,7 @@ body {
   line-height: 1.3;
 }
 
-.main-content-上6 {
+.main-content-up6 {
   top: 183px;
   right: -22px;
   width: 138px;
@@ -145,6 +156,17 @@ body {
   text-decoration: none;
 }
 
+.cta-btn__image {
+    position: absolute;
+    display: block;
+    content: "";
+    right: -141px;
+    bottom: -419px;
+    width: 630px;
+    height: 570px;
+    background: url(../img/img-hero-01.png) left top/contain no-repeat;
+}
+
 /*-----( hero-sub )-----*/
 .hero-sub {
 	padding: 0 0 45px;
@@ -171,7 +193,6 @@ body {
 	z-index: 1;
 	width: 233px;
 	height: 225px;
-	background: url(../img/img-hero-02.png) center top no-repeat;
 	background-size: 100% auto;
 }
 .hero-sub-title {
@@ -195,3 +216,30 @@ body {
 	left: 262px;
 	width: 214px;
 }
+
+.hero-branch {
+  position: relative;
+  z-index: 10;
+  color: #0b9092;
+}
+
+.hero-branch-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+
+ul {
+  list-style: none;
+}
+
+.hero-branch-item {
+  margin: 0;
+  padding: 0 4px 0 4px;
+  border-left: thin solid  #0b9092ff;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+
+/*sectionページ*/
