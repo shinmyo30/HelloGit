@@ -2,7 +2,8 @@ body {
 	position: relative;
 	color: #000;
 	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif;
-	font-size: 16px;
+  font-size: 16px;
+  margin: 0;
 }
 
 /*共通事項*/
@@ -11,21 +12,27 @@ body {
   box-sizing: border-box;
 }
 
-//*header部分*//
+a {
+  text-decoration: none;
+}
+
+/*header部分*/
 
 .header {
-  background-color: aliceblue;
+  background-color: white;
 }
 
 .header-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 18px 0 20px;
+  padding: 2px 0 6px;
+  margin: auto;
 }
 
 .header-logo {
   width: 40%;
   max-width: 242px;
+  padding-left: 230px;
 }
 
 .info-tell {
@@ -34,8 +41,14 @@ body {
   margin: 0 0 4px;
 	background: url(../img/icon-tel-01.png) left center no-repeat;
 	color: #000;
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: Roboto,sans-serif;
+}
+
+.header-info {
+  padding-right: 130px;
+  padding-top: 20px;
 }
 
 .info-time {
@@ -45,10 +58,10 @@ body {
   line-height: 0.5em;
 }
 
-//*main-up 部分*//
+/*main-up 部分*/
 
 .main-content {
-  background-image: url(../img/bg-hero.jpg)center top no-repeat;
+  background: url(../img/bg-hero.jpg)center top no-repeat;
   background-size: cover;
   position: relative;
 }
