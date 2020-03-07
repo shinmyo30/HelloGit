@@ -27,6 +27,7 @@ a {
   justify-content: space-between;
   padding: 2px 0 6px;
   margin: auto;
+  height: 80px;
 }
 
 .header-logo {
@@ -74,9 +75,16 @@ a {
   background-size: cover;
 }
 
+.main-content-up {
+    width:70%;
+    max-width: 800px;
+    padding: 58px 0 0;
+}
+
 .main-content-up1 {
   margin-top: 10px;
   padding: 16px 0 0;
+  padding-top: 10px;
   margin-bottom: 10px;
   font-size: 48px;
   line-height: 77px;
@@ -137,25 +145,36 @@ a {
 }
 
 .main-content-up5__text01 {
-  top: 32px;
-  right: 56px;
-  width: 250px;
-  height: 246px;
+  display: inline-block;
   color: #fcff00;
   letter-spacing: .15em;
-  padding-left: 1000px;
+  padding-right: 800px;
   position: absolute;
   z-index: 10;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.3;
+  writing-mode: horizontal-tb;
+}
+
+.main-content-up5__text02 {
+  display: inline-block;
+  color: #fcff00;
+  letter-spacing: .15em;
+  padding-right: 600px;
+  position: absolute;
+  z-index: 10;
+  font-size: 56px;
   font-weight: bold;
   line-height: 1.3;
 }
 
 .main-content-up5, .main-content-up6 {
   display: flex;
-  flex-flow: column;
+  flex-flow: column; 
   justify-content: center;
-  align-items: center;
   position: absolute;
+  align-items: center;
   z-index: 9;
   font-weight: bold;
   line-height: 1.3;
@@ -171,13 +190,54 @@ a {
   padding-left: 370px;
 }
 
+.main-content-up6__text01 {
+  display: inline-block;
+  color: #f25459;
+  letter-spacing: .15em;
+  padding-right: 700px;
+  position: absolute;
+  z-index: 10;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.3;
+  writing-mode: horizontal-tb;
+}
+
+.main-content-up6__text02 {
+  display: inline-block;
+  color: #f25459;
+  letter-spacing: .15em;
+  padding-right: 600px;
+  position: absolute;
+  z-index: 10;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.3;
+  writing-mode: horizontal-tb;
+}
+
+.main-content-up6__text03 {
+  display: inline-block;
+  color: #f25459;
+  letter-spacing: .15em;
+  padding-right: 500px;
+  position: absolute;
+  z-index: 10;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.3;
+  writing-mode: horizontal-tb;
+}
+
 .cta-call {
   color: #f25459;
   text-align: center;
+  width: 500px;
+  margin-bottom: 20px;
 }
 
 .cta-call__text {
-  padding: 0 18px 0 17px;
+  padding: 0 50px 0 17px;
   display: inline-block;
   position: relative;
   font-weight: bold;
@@ -217,16 +277,31 @@ a {
   box-shadow: 0 -4px 0 #d03035 inset;
   background: #f25459;
   color: #fff;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
+  width: 450px;
+  height: 80px;
+}
+
+.cta-btn__text0-bb {
+  font-size: 15px;
+  font-weight: bold;
+  padding-right: 50px;
+}
+
+.mark1 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-right: 50px;
 }
 
 .cta-btn__image {
     position: absolute;
     display: block;
     content: "";
-    right: -141px;
-    bottom: -419px;
+    right: -1px;
+    bottom: -380px;
     width: 630px;
     height: 570px;
     background: url(../img/img-hero-01.png) left top/contain no-repeat;
