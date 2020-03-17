@@ -7,6 +7,7 @@ body {
 }
 
 /*共通事項*/
+/*全体事項*/
 *, ::after, ::before {
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -16,6 +17,66 @@ body {
 a {
   text-decoration: none;
 }
+
+/*お問合せフォーム*/
+
+.cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 -4px 0 #d03035 inset;
+  background: #f25459;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  width: 450px;
+  height: 80px;
+}
+
+.-brt {
+  
+  font-size: 32px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 800px;
+  height: 120px;
+  z-index: 5;
+}
+
+/*お問い合せ 図形*/
+.cta-section-cta-section-01::before {
+  display: block;
+  content: "";
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: -268px;
+  z-index: 1;
+  width: 67%;
+  max-width: 665px;
+  height: 579px;
+  background: url(../img/logo-bg.png) left top no-repeat;
+  background-size: contain;
+}
+
+
+/*お問い合せ > */
+
+.cta-btn::before {
+  content: "";
+  position: absolute;
+  left: 50px;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #fff;   /*上線の設定*/
+  border-right: 2px solid #fff; /*下線の設定*/
+  transform: rotate(45deg);       /*線の傾き*/
+}
+
+/*ボーダー*/
 
 .client-title::before {
   content: "";
@@ -316,21 +377,7 @@ a {
   vertical-align: inherit;
 }
 
-.cta-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  border-radius: 5px;
-  box-shadow: 0 -4px 0 #d03035 inset;
-  background: #f25459;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  width: 450px;
-  height: 80px;
-}
+
 
 .cta-btn__text0-bb {
   font-size: 15px;
@@ -753,6 +800,7 @@ ul {
 .cta-section-cta-section-01 {
   margin: 0;
   background: #e6e5e8;
+  position: relative;
 }
 
 .cta-wrapper {
@@ -801,3 +849,5 @@ ul {
   height: 60px;
   width: 60px;
 }
+
+/*お姉さん２*/
