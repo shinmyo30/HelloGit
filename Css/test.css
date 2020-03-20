@@ -53,9 +53,9 @@ a {
   opacity: .2;
   position: absolute;
   top: 0;
-  left: -268px;
+  left: -80px;
   z-index: 1;
-  width: 67%;
+  width: 65%;
   max-width: 665px;
   height: 579px;
   background: url(../img/logo-bg.png) left top no-repeat;
@@ -126,6 +126,29 @@ a {
   width: 43px;
 }
 
+.section-title::before {
+  content: "";
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 4px;
+  background: #0b9092;
+  width: 86px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  left: 40px;
+  height: 4px;
+  background: #000;
+  width: 43px;
+}
 /*header部分*/
 
 .header {
@@ -644,8 +667,7 @@ ul {
 .strength-page {
   position: relative;
   padding: 120px 0 0;
-  margin: 0 auto;
-  max-width: 1080px;
+  text-align: center;
 }
 
 .strength-title {
@@ -672,9 +694,11 @@ ul {
 /*strength-list*/
 
 .strength-list-wrapper {
+  display: inline-block;
   position: relative;
   margin: 25px 0 120px;
   padding: 8px;
+  max-width: 1080px;
   background-color: #f0eff4;
 }
 
@@ -683,7 +707,7 @@ ul {
 .strength-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: content;
   padding: 0;
 }
 
@@ -851,3 +875,139 @@ ul {
 }
 
 /*お姉さん２*/
+
+.cta-section-cta-section-01::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 180px;
+  z-index: 10;
+  height: 312px;
+  width: 312px;
+  background: url(../img/img-cta.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+} 
+
+/*step*/
+
+.step {
+  padding: 120px 0 70px;
+}
+
+.section-title {
+  position: relative;
+  padding: 36px 0 0;
+}
+
+.section-title-main {
+  font-size: 64px; 
+  font-weight: bold;
+}
+
+.section-title-main b {
+  color: #0b9092;
+}
+
+.section-title-text {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.section-title-text b {
+  color: #0b9092;
+  box-shadow: 0 -10px 0 inset rgba(11, 144, 148, .1);
+}
+
+.step-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 76px 0 0;
+}
+
+.step-list-ietem {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 220px;
+  margin: 0 0 52px;
+  background: #f0eff4;
+  font-weight: bold;
+}
+
+.step-list-ietem-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  left: 0px;
+  font-size: 14px;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #0b9092;
+  color: #f0eff4;
+}
+
+.step-list-ietem-text {
+  display: flex;
+  align-items: center;
+  height: 73px;
+  padding: 9px 10px 0;
+  line-height: 2em;
+  color: #0b9092;
+  text-align: center;
+}
+
+/*共通部分*/
+
+.step-list-ietem::before {
+  content: "";
+  display: block;
+  height: 80px;
+  width: 80px;
+}
+
+/*画像1から８*/
+
+.setp-img01::before {
+  background: url(../img/icon-step-01.png) no-repeat;
+}
+
+.setp-img02::before {
+  background: url(../img/icon-step-02.png) no-repeat;
+}
+
+.setp-img03::before {
+  background: url(../img/icon-step-03.png) no-repeat;
+}
+
+.setp-img04::before {
+  background: url(../img/icon-step-04.png) no-repeat;
+}
+
+.setp-img05::before {
+  background: url(../img/icon-step-05.png) no-repeat;
+}
+
+.setp-img06::before {
+  background: url(../img/icon-step-06.png) no-repeat;
+}
+
+.setp-img07::before {
+  background: url(../img/icon-step-07.png) no-repeat;
+}
+
+.setp-img08::before {
+  background: url(../img/icon-step-08.png) no-repeat;
+}
