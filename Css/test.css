@@ -76,7 +76,33 @@ a {
   transform: rotate(45deg);       /*線の傾き*/
 }
 
-/*ボーダー*/
+/*お問い合せ-斜線-*/
+
+.cta-call-voice::before {
+  content: "";
+  position: absolute;
+  border-left: 2px solid #f25459;
+  transform: rotate(-25deg);
+  top: 0px;
+  left: 0px;
+  height: 60px;
+  width: 60px;
+}
+
+.cta-call-voice::after {
+  content: "";
+  position: absolute;
+  border-right: 2px solid #f25459;
+  transform: rotate(25deg);
+  top: 0px;
+  right: 0px;
+  height: 60px;
+  width: 60px;
+}
+
+
+
+/*ボーダー横線*/
 
 .client-title::before {
   content: "";
@@ -149,6 +175,29 @@ a {
   background: #000;
   width: 43px;
 }
+
+/*ボーダー縦線*/
+.sub-section__title::before , .sub-section__title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0px;
+  width: 5px;
+} 
+
+.sub-section__title::before {
+  z-index: 1px;
+  top: 10px;
+  height: 40px;
+  background: #0b9092;
+}
+
+.sub-section__title::after {
+  z-index: 2px;
+  top: 5px;
+  height: 22px;
+  background: #000;
+} 
 /*header部分*/
 
 .header {
@@ -897,6 +946,7 @@ ul {
 
 .section-title {
   position: relative;
+  margin: 0 auto 60px;
   padding: 36px 0 0;
 }
 
@@ -1010,4 +1060,200 @@ ul {
 
 .setp-img08::before {
   background: url(../img/icon-step-08.png) no-repeat;
+}
+
+/*--voice--*/
+
+.voice {
+  padding: 120px 0;
+  background: url(../img/bg-voice.jpg);
+  background-size: cover;
+}
+
+.voice-list {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 1000px;
+  padding: 80px 0 0;
+}
+
+.voice-list-ietem  {
+  width: 480px;
+  height: 440px;
+  padding: 0 40px 30px;
+  margin: 0;
+  background: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .2);
+}
+
+.voice-list-ietem::before {
+  content: "";
+  display: block;
+  margin: -40px auto 13px;
+  width: 203px;
+  height: 203px;
+}
+
+.voice-img01::before {
+  background: url(../img/img-voice-01.png) no-repeat;
+}
+
+.voice-img02::before {
+  background: url(../img/img-voice-02.png) no-repeat;
+}
+
+.voice-list-client {
+  margin: 0 0 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.voice-list-title {
+  margin: 0 0 14px;
+  color: #0b9092;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.7em;
+}
+
+.cta {
+  position: relative;
+  margin: 70px auto 0;
+  max-width: 1080px;
+}
+
+.cta-call-voice {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  padding: 0 30px 0 32px;
+  margin-bottom: 30px;
+  color: #f25459;
+}
+
+.cta-btn__text1 {
+  font-size: 24px;
+}
+
+.cta-btn__text-b {
+  font-size: 32px;
+}
+
+/*!--service-wrapper--*/
+
+.service-wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 112px 0 0;
+}
+
+.service-title {
+  text-align: center;
+}
+
+.section-title__main {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.sub-section__title {
+  position: relative;
+  margin: 0 0 34px;
+  padding: 0 0 0 26px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.sub-section__title-sub {
+  margin: 0 0 7px;
+  color: #0b9092;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.build-list {
+  padding: 70px 0 120px;
+  display: grid;
+  gap: 80px 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.build-list-item {
+  background: #f0eff4;
+  padding: 0 40px 30px;
+}
+
+.build-list-title {
+  color: #0b9092;
+  margin: 0 0 17px;
+  height: 25px;
+  text-align: center;
+}
+
+.build-list-title__sub {
+  display: block;
+  margin: 7px 0 0;
+  font-size: 12px;
+}
+
+.element.style {
+  height: 47px;
+}
+
+.build-list-title__main {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*擬似要素*/
+.build-list-item::before {
+  content: "";
+  display: block;
+  margin: -40px auto 28px;
+  width: 100px;
+  height: 100px;
+
+}
+
+.build-list-item01::before {
+  background: url(../img/icon-build-01.png)top no-repeat;
+  background-size: contain; 
+}
+
+.build-list-item02::before {
+  background: url(../img/icon-build-02.png)top no-repeat;
+  background-size: contain; 
+}
+
+.build-list-item03::before {
+  background: url(../img/icon-build-03.png)top no-repeat;
+  background-size: contain; 
+}
+
+.build-list-item04::before {
+  background: url(../img/icon-build-04.png)top no-repeat;
+  background-size: contain; 
+}
+
+.build-list-item05::before {
+  background: url(../img/icon-build-05.png)top no-repeat;
+  background-size: contain; 
+}
+
+.build-list-item06::before {
+  background: url(../img/icon-build-06.png)top no-repeat;
+  background-size: contain; 
+}
+
+.build-list-item07::before {
+  background: url(../img/icon-build-07.png)top no-repeat;
+  background-size: contain; 
+}
+
+.build-list-item08::before {
+  background: url(../img/icon-build-08.png)top no-repeat;
+  background-size: contain; 
 }
