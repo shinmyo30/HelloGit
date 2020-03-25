@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+body,html {
+  overflow-x: hidden;
+}
+
 /*お問合せフォーム*/
 
 .cta-btn {
@@ -37,12 +41,11 @@ a {
 }
 
 .-brt {
-  
   font-size: 32px;
   font-weight: bold;
   width: 100%;
   max-width: 800px;
-  height: 120px;
+  height: 80px;
   z-index: 5;
 }
 
@@ -68,7 +71,7 @@ a {
 .cta-btn::before {
   content: "";
   position: absolute;
-  left: 50px;
+  left: 30px;
   width: 12px;
   height: 12px;
   border-top: 2px solid #fff;   /*上線の設定*/
@@ -251,11 +254,15 @@ a {
   background-size: cover;
 }
 
+.main_content_inner {
+  max-width: 1000px;
+  position: relative;
+}
+
 .main-content-up {
-    width:70%;
     max-width: 800px;
     padding: 58px 0 0;
-    margin-left: 250px;
+    margin: initial;
 }
 
 .main-content-up1 {
@@ -325,7 +332,7 @@ a {
 
 .main-content-up5 {
   top: 32px;
-  right: 280px;
+  right: 80px;
   width: 250px;
   height: 246px;
   background: url(../img/bg-hero-text-01.png) left top no-repeat;
@@ -365,7 +372,7 @@ a {
 
 .main-content-up6 {
   top: 183px;
-  right: 200px;
+  right: 0px;
   width: 138px;
   height: 142px;
   background: url(../img/bg-hero-text-02.png) left top no-repeat;
@@ -407,7 +414,7 @@ a {
 
 .cta-hero {
   width: 440px;
-  margin: 36px 250px 0;
+  margin: 36px 0 0;
 }
 
 .cta-call {
@@ -454,7 +461,6 @@ a {
 .cta-btn__text0-bb {
   font-size: 15px;
   font-weight: bold;
-  padding-right: 50px;
 }
 
 .mark1 {
@@ -467,8 +473,8 @@ a {
     position: absolute;
     display: block;
     content: "";
-    right: 50px;
-    bottom: -350px;
+    right: -150px;
+    bottom: -420px;
     width: 630px;
     height: 570px;
     background: url(../img/img-hero-01.png) left top/contain no-repeat;
@@ -925,11 +931,15 @@ ul {
 
 /*お姉さん２*/
 
-.cta-section-cta-section-01::after {
+.button_area {
+  position: relative;
+}
+
+.button_area::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  right: 180px;
+  bottom: -80px;
+  right: 0px;
   z-index: 10;
   height: 312px;
   width: 312px;
@@ -1140,6 +1150,10 @@ ul {
   font-size: 32px;
 }
 
+.cta-btn__text-w {
+  font-size: 22px;
+}
+
 /*!--service-wrapper--*/
 
 .service-wrapper {
@@ -1304,4 +1318,8 @@ ul {
 
 .cms-block02::before {
   background: url(../img/img-cms-02.jpg) left top/contain no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+
 }
