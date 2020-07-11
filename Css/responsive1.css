@@ -1,0 +1,255 @@
+/*----------------------------*/
+/*-----レスポンシブ対応---------*/
+/*---------------------------*/
+
+/*----------------------------*/
+/*------768px対応--------------*/
+/*----------------------------*/
+/*----------------------------*/
+/*------375px対応--------------*/
+/*----------------------------*/
+
+
+
+@media screen and (max-width: 768px) {
+
+ /*----main-content------*/
+  .main-content-up {
+    width: 70%;
+    max-width: 700px;
+    padding: 58px 0 0;
+    margin: 0;
+  }
+
+  .main_content_inner {
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  .main-content-up1 {
+    font-size: 32px;
+    line-height: 1.6em;
+  }
+
+  .main-content-up1::before {
+    position: absolute;
+    content: '・・・・・・・・';
+    top: -45px;
+    font-size: 32px;
+    line-height: 77px;
+    letter-spacing: 0.13em;
+    color: #f25459;
+  }
+
+ .main-content-up3 {
+  font-size: 64px;
+  line-height: 1.2em;
+  margin-bottom: 0px;
+ }
+
+ .main-content-up4 p1,p3 {
+  padding: 2px 0 0;
+  font-size: 31px;
+ }
+
+ .color2{
+  font-size: 44px;
+ }
+
+ /*----------------------------*/
+ /*----main--球体--赤色---------*/
+ /*----------------------------*/
+
+ .main-content-up5 {
+  right: 36px;
+  width: 200px;
+  height: 196px;
+  background-size: contain;
+ }
+
+ .main-content-up5__text01 {
+  font-size: 28px;
+ }
+ .main-content-up5__text02 {
+  font-size: 44px;
+ }
+
+ /*----main--球体--黄色------*/
+ .main-content-up6 {
+  right: -10px;
+  width: 118px;
+  height: 122px;
+  background-size: contain;
+ }
+
+ .main-content-up6__text01 {
+  font-size: 13px;
+ }
+
+ .main-content-up6__text02 {
+  font-size: 20px;
+ }
+
+ .main-content-up6__text03 {
+  font-size: 13px;
+ }
+
+ .cta-btn {
+   height: 80px;
+ }
+
+ .cta-btn__image {
+  right: -140px;
+  bottom: -355px;
+  width: 530px;
+  height: 470px;
+ }
+
+ /*----------------------------*/
+ /*----ホームページ制作実績------*/
+ /*----------------------------*/
+
+ .client-title-sub1 {
+  font-size: 20px;
+ }
+ .client-title-sub2 {
+  font-size: 46px;
+ }
+
+
+ /*----------------------------*/
+ /*----ホームページの強み---------*/
+ /*----------------------------*/
+
+ .strength-title-sub {
+   font-size: 20px;
+ }
+
+ .strength-title-main {
+  font-size: 46px;
+ }
+
+ .strength-comment {
+  right: 10px;
+  bottom: 342px;
+  width: 350px;
+  height: 169px;
+  padding: 22px;
+ }
+
+ .strength-list-wrapper::after {
+  right: 24px;
+  width: 232px;
+  height: 388px;
+ }
+
+ /*----------------------------*/
+ /*----お問合せはこちら-----------*/
+ /*----------------------------*/
+ 
+ .-brt2 {
+  height: 120px;
+ }
+ 
+ .cta-call__textt::before {
+  left: 120px;
+ }
+
+ .cta-call__textt::after {
+  right: 150px;
+ }
+
+ .button_area::after {
+  bottom: -150px;
+  right: -10px;
+ } 
+
+
+
+
+ /*-------------------------------*/
+ /*--------制作の流れ---------------*/
+ /*-------------------------------*/
+
+ .section-title-main {
+  font-size: 46px;
+ }
+
+ /*--------------------------------*/
+ /*----ホームページ作成・運用サービス---*/
+ /*--------------------------------*/
+
+ .section-title__main {
+  font-size: 46px;
+ }
+
+ /*------------------------------------*/
+ /*---------管理画面---------------------*/
+ /*-------------------------------------*/
+ .sub-section__title {
+  font-size: 32px;
+ }
+
+
+ /*----------------------------*/
+ /*----ホームページの活用方法------*/
+ /*----------------------------*/
+
+ .section-title__sub {
+  font-size: 20px;
+ }
+
+ .practice-list-ietem::before {
+  height: 105px;
+ }
+
+ /*--------------------------------------*/
+ /*----ホームページの作成やリニューアルに------*/
+ /*--------------------------------------*/
+
+ .bottom-section-title__sub {
+  font-size: 20px;
+ }
+
+ .bottom-section-title__main {
+  font-size: 46px;
+ }
+
+ .bottom-cta-section::before {
+  left: -250px;
+}
+
+.bottom-cta-section::after {
+  width: 32%;
+  height: 360px;
+}
+
+ /*--------------------------------------*/
+ /*------------footer--------------------*/
+ /*--------------------------------------*/
+
+ .footer-info {
+  text-align: right;
+ }
+
+ .footer-info__tell {
+  font-size: 23px;
+ }
+
+ /*--------------------------------------*/
+ /*----------fixed-bar-wrapper-----------*/
+ /*--------------------------------------*/
+
+ .fixed-bar_text {
+  font-size: 14px;
+  padding: 0 12px 0 0;
+ }
+
+ .fixed-bar-tell_num {
+  margin: -6px 0 6px;
+  padding: 0 0 0 26px;
+  font-size: 20px;
+ }
+ 
+
+}
